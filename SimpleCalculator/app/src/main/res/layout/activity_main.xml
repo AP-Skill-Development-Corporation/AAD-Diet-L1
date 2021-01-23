@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/edit1"
+       android:hint="Enter First Number"
+       android:inputType="number"
+       android:layout_marginTop="40sp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit2"
+        android:hint="Enter Second Number"
+        android:layout_marginTop="40sp"
+        android:inputType="number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30sp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:background="#fff"
+            android:onClick="plus"
+            android:layout_marginRight="10sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:onClick="minus"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10sp"
+            android:background="#fff"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:onClick="multi"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10sp"
+            android:background="#fff"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:onClick="division"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10sp"
+            android:background="#fff"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="34sp"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"/>
+
+</LinearLayout>
